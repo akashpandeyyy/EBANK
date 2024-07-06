@@ -4,24 +4,161 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/grdnt"
     tools:context=".Register">
 
-    <ImageView
-        android:id="@+id/imageView8"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/bguni" />
+
 
     <ImageView
-        android:id="@+id/imageView9"
+        android:id="@+id/imageView6"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/footerlogo" />
+        app:srcCompat="@drawable/headerlogo" />
+
+
+    <com.hbb20.CountryCodePicker
+        android:id="@+id/ccp"
+        android:layout_width="131dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="2dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/User_pin"
+        app:layout_constraintEnd_toStartOf="@+id/User_phone_no"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+
+        android:id="@+id/User_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"
+        android:hint="Name"
+        app:layout_constraintBottom_toTopOf="@+id/User_Fathername"
+        tools:layout_editor_absoluteX="0dp" />
+
+
+    <EditText
+        android:id="@+id/User_Fathername"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="12dp"
+        android:hint="Father name"
+        app:layout_constraintBottom_toTopOf="@+id/User_phone_no"
+        tools:layout_editor_absoluteX="123dp" />
+
+
+    <EditText
+        android:id="@+id/User_phone_no"
+        android:layout_width="264dp"
+        android:layout_height="49dp"
+        android:layout_marginBottom="4dp"
+        android:drawableLeft="@drawable/phone"
+        android:hint="Phone (XXX-XXX-XXXX)"
+        android:inputType="phone"
+        app:layout_constraintBottom_toTopOf="@+id/User_pin"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <EditText
+        android:id="@+id/User_pin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"
+        android:drawableLeft="@drawable/password"
+        android:ems="06"
+        android:hint="Pin(XXX-XXX)"
+        android:inputType="numberPassword"
+        app:layout_constraintBottom_toTopOf="@+id/User_email" />
+
+
+    <EditText
+        android:id="@+id/User_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"
+        android:drawableLeft="@drawable/mail"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        app:layout_constraintBottom_toTopOf="@+id/User_dob"
+        tools:layout_editor_absoluteX="-16dp" />
+
+    <EditText
+        android:id="@+id/User_dob"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"
+        android:drawableLeft="@drawable/dob"
+        android:hint="Date of Birth (MM/DD/YYYY)"
+        android:inputType="date"
+        app:layout_constraintBottom_toTopOf="@+id/User_addhar" />
+
+    <EditText
+        android:id="@+id/User_address"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:hint="Address"
+        app:layout_constraintTop_toBottomOf="@+id/User_addhar"
+        tools:layout_editor_absoluteX="16dp" />
+
+    <EditText
+        android:id="@+id/User_gender"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="gender"
+        app:layout_constraintBottom_toTopOf="@+id/textView4"
+        app:layout_constraintTop_toBottomOf="@+id/User_address"
+        tools:layout_editor_absoluteX="16dp" />
+
+    <EditText
+        android:id="@+id/User_addhar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="135dp"
+        android:hint="Addhar no."
+        android:inputType="number"
+        app:layout_constraintBottom_toTopOf="@+id/textView4"
+        tools:layout_editor_absoluteX="-36dp" />
+
+    <Button
+        android:id="@+id/Register3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="16dp"
+        android:drawableLeft="@drawable/register"
+        android:fontFamily="@font/regular"
+        android:text="Register"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView4" />
+
+    <Button
+        android:id="@+id/Login3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="16dp"
+        android:drawableLeft="@drawable/login"
+        android:fontFamily="@font/regular"
+        android:text="Login"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/textView4"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:fontFamily="@font/sbold"
+        android:text="Developed BY\nAkash Pandey"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/grdnt"
+    tools:context=".TravelActivity">
+
+    <ImageView
+        android:id="@+id/imageView10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/headerlogo" />
+
+
+    <ImageButton
+        android:id="@+id/rail"
+        android:layout_width="136dp"
+        android:layout_height="115dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="195dp"
+        android:src="@drawable/railimg"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/Back2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:background="#D565C1E8"
+        android:drawableLeft="@drawable/back"
+        android:fontFamily="@font/regular"
+        android:gravity="center"
+        android:letterSpacing="0.2"
+        android:padding="10dp"
+        android:text="Back"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageButton
+        android:id="@+id/flight"
+        android:layout_width="127dp"
+        android:layout_height="123dp"
+        android:layout_marginStart="19dp"
+        android:layout_marginTop="148dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rail"
+        app:srcCompat="@drawable/flightimg" />
+
+    <TextView
+        android:id="@+id/rail_ticket"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:fontFamily="@font/sbold"
+        android:text="Railway Ticket"
+        android:textSize="19dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rail" />
+
+    <TextView
+        android:id="@+id/flight_ticket"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:fontFamily="@font/sbold"
+        android:text="Flight Ticket"
+        android:textSize="19dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/flight" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

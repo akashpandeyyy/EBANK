@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/grdnt"
+    tools:context=".change_pin">
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/headerlogo" />
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="-32dp">
+
+
+        <EditText
+            android:id="@+id/re_pin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="280dp"
+            android:drawableLeft="@drawable/password"
+            android:ems="06"
+            android:hint="Pin (XXX-XXX)*"
+            android:inputType="numberPassword"
+
+            />
+
+        <Button
+            android:id="@+id/Change_pin"
+            android:layout_width="182dp"
+            android:layout_height="81dp"
+            android:layout_below="@+id/re_pin"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="117dp"
+            android:layout_marginTop="107dp"
+            android:layout_marginEnd="112dp"
+            android:layout_marginBottom="218dp"
+            android:background="#D565C1E8"
+            android:fontFamily="@font/regular"
+            android:gravity="center"
+            android:letterSpacing="0.2"
+            android:padding="10dp"
+            android:text="Change pin"
+            android:textColor="#000000"
+            android:textStyle="bold" />
+
+
+    </RelativeLayout>
+
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:fontFamily="@font/sbold"
+        android:text="Developed BY\nAkash Pandey"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

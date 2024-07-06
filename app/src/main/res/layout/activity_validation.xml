@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/grdnt"
+    tools:context=".ValidationActivity">
+
+    <ImageView
+        android:id="@+id/imageView11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/headerlogo" />
+
+    <ImageView
+        android:id="@+id/imageView12"
+        android:layout_width="194dp"
+        android:layout_height="189dp"
+        android:layout_marginTop="32dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView11"
+        app:srcCompat="@drawable/bnkl" />
+
+
+    <EditText
+        android:id="@+id/Otp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="200dp"
+        android:drawableLeft="@drawable/password"
+        android:ems="06"
+        android:hint="OTP(XXX-XXX)*"
+        android:inputType="numberPassword"
+        app:layout_constraintBottom_toTopOf="@+id/textView2"
+        app:layout_constraintTop_toBottomOf="@+id/imageView12"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:fontFamily="@font/sbold"
+        android:text="Developed BY\nAkash Pandey"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/sbold"
+        android:text="Enter OTP"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toTopOf="@+id/Otp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView12"
+        app:layout_constraintVertical_bias="0.244" />
+
+    <Button
+        android:id="@+id/back3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="10dp"
+        android:background="#D565C1E8"
+        android:drawableLeft="@drawable/back"
+        android:fontFamily="@font/regular"
+        android:gravity="center"
+        android:letterSpacing="0.2"
+        android:padding="10dp"
+        android:text="Back"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/next"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/next"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="12dp"
+        android:background="#D565C1E8"
+        android:drawableRight="@drawable/next"
+        android:fontFamily="@font/regular"
+        android:gravity="center"
+        android:letterSpacing="0.2"
+        android:padding="10dp"
+        android:text="Next"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/textView2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

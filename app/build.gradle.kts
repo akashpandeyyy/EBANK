@@ -1,5 +1,7 @@
 plugins {
     id("com.android.application")
+    // Add the Google services Gradle plugin
+    id("com.google.gms.google-services")
 }
 
 android {
@@ -36,7 +38,49 @@ dependencies {
     implementation("androidx.appcompat:appcompat:1.6.1")
     implementation("com.google.android.material:material:1.9.0")
     implementation("androidx.constraintlayout:constraintlayout:2.1.4")
+    implementation("androidx.room:room-common:2.6.1")
+   implementation("com.google.firebase:firebase-database:20.3.1")
+    implementation("androidx.webkit:webkit:1.10.0")
+    implementation("androidx.activity:activity:1.8.0")
+    implementation("com.google.firebase:firebase-auth:23.0.0")
     testImplementation("junit:junit:4.13.2")
     androidTestImplementation("androidx.test.ext:junit:1.1.5")
     androidTestImplementation("androidx.test.espresso:espresso-core:3.5.1")
+    // Import the Firebase BoM
+    implementation(platform("com.google.firebase:firebase-bom:32.7.4"))
+
+    implementation ("com.firebaseui:firebase-ui-database:8.0.0")
+    // TODO: Add the dependencies for Firebase products you want to use
+    // When using the BoM, don't specify versions in Firebase dependencies
+    implementation("com.google.firebase:firebase-analytics")
+
+    implementation(platform("com.google.firebase:firebase-bom:32.7.4"))
+    implementation("com.google.firebase:firebase-analytics")
+    // Add the dependencies for any other desired Firebase products
+    // https://firebase.google.com/docs/android/setup#available-libraries
+
+
+    //country code picker
+    implementation("com.hbb20:ccp:2.5.2")
+
+
+
+
+    implementation("androidx.appcompat:appcompat:1.6.1")
+    implementation("com.google.android.material:material:1.9.0")
+    implementation("androidx.constraintlayout:constraintlayout:2.1.4")
+    implementation("androidx.room:room-common:2.6.1")
+//implementation("com.google.firebase:firebase-database:22.0.0") // Updated version
+    implementation("androidx.webkit:webkit:1.10.0")
+    implementation("androidx.activity:activity:1.8.0")
+    testImplementation("junit:junit:4.13.2")
+    androidTestImplementation("androidx.test.ext:junit:1.1.5")
+    androidTestImplementation("androidx.test.espresso:espresso-core:3.5.1")
+    implementation(platform("com.google.firebase:firebase-bom:32.7.4"))
+    implementation("com.firebaseui:firebase-ui-database:8.0.0") // Updated version
+    implementation("com.google.firebase:firebase-analytics")
+    implementation ("androidx.recyclerview:recyclerview:1.3.2") // Updated version
+    implementation("androidx.cardview:cardview:1.0.0")
+
+
 }

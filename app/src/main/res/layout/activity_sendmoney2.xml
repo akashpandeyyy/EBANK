@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/grdnt"
+    tools:context=".SendmoneyActivity2">
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        app:srcCompat="@drawable/headerlogo" />
+
+
+    <EditText
+        android:id="@+id/User_pin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:drawableLeft="@drawable/password"
+        android:ems="06"
+        android:hint="Pin (XXX-XXX)"
+        android:inputType="numberPassword"
+        app:layout_constraintTop_toBottomOf="@+id/Amount"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <EditText
+        android:id="@+id/Amount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:ems="06"
+        android:hint="Enter Amount"
+        android:inputType="numberDecimal"
+        app:layout_constraintTop_toBottomOf="@+id/Re_Reciver_account_no"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <EditText
+        android:id="@+id/Re_Reciver_account_no"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:drawableLeft="@drawable/account"
+        android:hint="Re-account Number(XXX-XXX-XXXX)"
+
+        app:layout_constraintTop_toBottomOf="@+id/Reciver_account_no"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <EditText
+        android:id="@+id/Reciver_account_no"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="200dp"
+        android:drawableLeft="@drawable/account"
+        android:hint="Account Number(XXX-XXX-XXXX)"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView6" />
+
+    <Button
+        android:id="@+id/Pay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="32dp"
+        android:fontFamily="@font/regular"
+        android:text="Pay"
+        app:layout_constraintBottom_toTopOf="@+id/textView4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:fontFamily="@font/sbold"
+        android:text="Developed BY\nAkash Pandey"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/acc_balance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="75dp"
+        android:layout_marginEnd="82dp"
+        android:text="TextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView6" />
+
+    <TextView
+        android:id="@+id/account_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="75dp"
+        android:text="TextView"
+        app:layout_constraintEnd_toStartOf="@+id/acc_balance"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView6" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

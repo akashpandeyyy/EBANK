@@ -4,61 +4,75 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/grdnt"
     tools:context=".Loginregister">
 
     <ImageView
-        android:id="@+id/imageView13"
+        android:id="@+id/imageView3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:srcCompat="@drawable/bgunivrsl" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/headerlogo" />
 
     <ImageView
-        android:id="@+id/imageView14"
+        android:id="@+id/imageView4"
         android:layout_width="194dp"
         android:layout_height="189dp"
-        android:layout_marginTop="192dp"
+        app:layout_constraintBottom_toTopOf="@+id/Login"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/imageView13"
+        app:layout_constraintTop_toBottomOf="@+id/imageView3"
         app:srcCompat="@drawable/bnkl" />
 
-    <Button
-        android:id="@+id/Login"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:background="@drawable/whitebutton"
-        android:layout_marginTop="116dp"
-        android:text="Login"
-        app:layout_constraintEnd_toEndOf="@+id/imageView14"
-        app:layout_constraintHorizontal_bias="0.496"
-        app:layout_constraintStart_toStartOf="@+id/imageView14"
-        app:layout_constraintTop_toBottomOf="@+id/imageView14" />
-
-    <Button
-        android:id="@+id/Register"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="28dp"
-        android:background="@drawable/whitebutton"
-        android:text="Register"
-        app:layout_constraintEnd_toEndOf="@+id/Login"
-        app:layout_constraintHorizontal_bias="0.461"
-        app:layout_constraintStart_toStartOf="@+id/Login"
-        app:layout_constraintTop_toBottomOf="@+id/Login" />
 
     <TextView
         android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="16dp"
+        android:fontFamily="@font/sbold"
         android:text="Developed BY\nAkash Pandey"
-        app:layout_constraintBottom_toBottomOf="@+id/imageView13"
-        app:layout_constraintEnd_toEndOf="@+id/Register"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/Register"
-        app:layout_constraintTop_toBottomOf="@+id/Register"
-        app:layout_constraintVertical_bias="0.396" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 
+    <Button
+        android:id="@+id/Login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="10dp"
+        android:background="#D565C1E8"
+        android:fontFamily="@font/regular"
+        android:gravity="center"
+        android:letterSpacing="0.2"
+        android:padding="10dp"
+        android:text="Login"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/Register"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/Register"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="12dp"
+        android:background="#D565C1E8"
+        android:fontFamily="@font/regular"
+        android:gravity="center"
+        android:letterSpacing="0.2"
+        android:padding="10dp"
+        android:text="Register"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/textView2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

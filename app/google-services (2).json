@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "887449771448",
+    "firebase_url": "https://graminebank-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "graminebank",
+    "storage_bucket": "graminebank.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:887449771448:android:f8b5d6ba2d194163ddc34d",
+        "android_client_info": {
+          "package_name": "com.example.ebank"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDRFMFuUl47jiQUuEZ33wspZ_grVkTabio"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

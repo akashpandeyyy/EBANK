@@ -2,18 +2,44 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
         android:fullBackupContent="@xml/backup_rules"
         android:icon="@drawable/appicon"
         android:label="@string/app_name"
-        android:roundIcon="@mipmap/ic_launcher_round"
+        android:roundIcon="@drawable/bnkl"
         android:supportsRtl="true"
         android:theme="@style/Theme.Ebank"
         tools:targetApi="31">
         <activity
-            android:name=".Home"
+            android:name=".change_pin"
+            android:exported="false" />
+        <activity
+            android:name=".Failpayment"
+            android:exported="false" />
+        <activity
+            android:name=".Sucess_payment"
+            android:exported="false" />
+        <activity
+            android:name=".PaymentsucessActivity2"
+            android:exported="false" />
+        <activity
+            android:name=".SendmoneyActivity2"
+            android:exported="false" />
+        <activity
+            android:name=".ValidationActivity"
+            android:exported="false" />
+        <activity
+            android:name=".TravelActivity"
+            android:exported="false" />
+        <activity
+            android:name=".CardActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AccountActivity"
             android:exported="false" />
         <activity
             android:name=".Profile"
@@ -28,8 +54,8 @@
             android:name=".Loginregister"
             android:exported="false" />
         <activity
-            android:name=".SlashActivity"
-            android:exported="true"  >
+            android:name=".SlashActivity2"
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -38,9 +64,7 @@
         </activity>
         <activity
             android:name=".MainActivity"
-            android:exported="true">
-
-        </activity>
+            android:exported="true" />
     </application>
 
 </manifest>
